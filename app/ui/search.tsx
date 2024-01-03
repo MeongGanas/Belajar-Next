@@ -15,7 +15,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     term ? params.set('query', term) : params.delete('query');
 
     replace(`${pathName}?${params.toString()}`);
-  }, 300);
+  }, 150);
 
   return (
     <div className="relative flex flex-1 flex-shrink-0">
